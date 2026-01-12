@@ -1,0 +1,71 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo><!-- setting GenerateAssemblyInfo to false causes this bug https://github.com/dotnet/project-system/issues/3934 -->
+    <TargetFramework>net8.0</TargetFramework>
+    <AssemblyName>Sap</AssemblyName>
+    <PackageId>Sap</PackageId>
+    <OutputType>Library</OutputType>
+    <Authors>OpenAPI</Authors>
+    <Company>OpenAPI</Company>
+    <AssemblyTitle>OpenAPI Library</AssemblyTitle>
+    <Description>A library generated from a OpenAPI doc</Description>
+    <Copyright>No Copyright</Copyright>
+    <RootNamespace>Sap</RootNamespace>
+    <Version>1.0.0</Version>
+    <DocumentationFile>bin\$(Configuration)\$(TargetFramework)\Sap.xml</DocumentationFile>
+    <RepositoryUrl>https://github.com/GIT_USER_ID/GIT_REPO_ID.git</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageReleaseNotes>Minor update</PackageReleaseNotes>
+    <Nullable>annotations</Nullable>
+    <ManagePackageVersionsCentrally>false</ManagePackageVersionsCentrally>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="JsonSubTypes" Version="2.0.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="9.0.8" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="9.0.8" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+    <PackageReference Include="RestSharp" Version="110.2.0" />
+    <PackageReference Include="Polly" Version="8.1.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="Model\SupplierInvoice\SupplierInvoiceASuplrInvcItemPurOrdRefTypeCreateToSupplierInvoiceItmAcctAssgmt.cs" />
+    <Compile Remove="Model\SupplierInvoice\SupplierInvoiceASupplierInvoiceTypeCreateToSupplierInvoiceODN.cs" />
+    <Compile Remove="Model\SupplierInvoice\SupplierInvoiceASupplierInvoiceTypeCreateToSuplrInvcItemAsset.cs" />
+    <Compile Remove="Model\SupplierInvoice\SupplierInvoiceASupplierInvoiceTypeToSelectedPurchaseOrders.cs" />
+    <Compile Remove="Model\SupplierInvoice\SupplierInvoiceASupplierInvoiceTypeToSuplrInvcItemMaterial.cs" />
+    <Compile Remove="Model\SupplierInvoice\SupplierInvoiceASupplierInvoiceTypeToSelectedDeliveryNotes.cs" />
+    <Compile Remove="Model\SupplierInvoice\SupplierInvoiceASupplierInvoiceTypeToSupplierInvoiceTax.cs" />
+    <Compile Remove="Model\SupplierInvoice\SupplierInvoiceASupplierInvoiceTypeToSupplierInvoiceODN.cs" />
+    <Compile Remove="Model\SupplierInvoice\SupplierInvoiceASupplierInvoiceTypeToSuplrInvcItemAsset.cs" />
+    <Compile Remove="Model\SupplierInvoice\SupplierInvoiceASuplrInvoiceAdditionalDataTypeCreate.cs" />
+    <Compile Remove="Model\SupplierInvoice\SupplierInvoiceASupplierInvoiceItemGLAcctTypeUpdate.cs" />
+    <Compile Remove="Model\SupplierInvoice\SupplierInvoiceASupplierInvoiceItemGLAcctTypeCreate.cs" />
+    <Compile Remove="Model\SupplierInvoice\SupplierInvoiceASuplrInvcSeldPurgDocumentTypeCreate.cs" />
+    <Compile Remove="Model\SupplierInvoice\SupplierInvoiceASuplrInvcHeaderWhldgTaxTypeCreate.cs" />
+    <Compile Remove="Model\SupplierInvoice\SupplierInvoiceASuplrInvcSeldSrvcEntrShtLeanType.cs" />
+    <Compile Remove="Model\SupplierInvoice\SupplierInvoiceASuplrInvcSeldInbDeliveryNoteType.cs" />
+    <Compile Remove="Model\SupplierInvoice\SupplierInvoiceASuplrInvcItemPurOrdRefTypeUpdate.cs" />
+    <Compile Remove="Model\SupplierInvoice\SupplierInvoiceASuplrInvcItemPurOrdRefTypeCreate.cs" />
+    <Compile Remove="Model\SupplierInvoice\SupplierInvoiceASupplierInvoiceItemMaterialType.cs" />
+    <Compile Remove="Model\SupplierInvoice\SupplierInvoiceABRSupplierInvoiceNFDocumentType.cs" />
+    <Compile Remove="Model\SupplierInvoice\SupplierInvoiceASuplrInvoiceAdditionalDataType.cs" />
+    <Compile Remove="Model\SupplierInvoice\SupplierInvoiceReleaseInvoiceExportParameters.cs" />
+    <Compile Remove="Model\SupplierInvoice\SupplierInvoiceASupplierInvoiceItemGLAcctType.cs" />
+    <Compile Remove="Model\SupplierInvoice\SupplierInvoiceCancelInvoiceExportParameters.cs" />
+    <Compile Remove="Model\SupplierInvoice\SupplierInvoiceASupplierInvoiceTaxTypeUpdate.cs" />
+    <Compile Remove="Model\SupplierInvoice\SupplierInvoiceASupplierInvoiceTaxTypeCreate.cs" />
+    <Compile Remove="Model\SupplierInvoice\SupplierInvoicePostInvoiceExportParameters.cs" />
+    <Compile Remove="Model\SupplierInvoice\SupplierInvoicePurOrdRefCollectionWrapper.cs" />
+    <Compile Remove="Model\SupplierInvoice\ABRSupplierInvoiceNFDocumentTypeWrapper.cs" />
+    <Compile Remove="Model\SupplierInvoice\SupplierInvoiceASupplierInvoiceODNType.cs" />
+    <Compile Remove="Model\SupplierInvoice\SupplierInvoiceTaxCollectionWrapper.cs" />
+    <Compile Remove="Model\SupplierInvoice\ASuplrInvcItemAcctAssgmtTypeWrapper.cs" />
+    <Compile Remove="Model\SupplierInvoice\ASuplrInvcHeaderWhldgTaxTypeWrapper.cs" />
+    <Compile Remove="Model\SupplierInvoice\SupplierInvoiceCollectionWrapper.cs" />
+    <Compile Remove="Model\SupplierInvoice\SupplierInvoicePurOrdRefWrapper.cs" />
+  </ItemGroup>
+
+</Project>
